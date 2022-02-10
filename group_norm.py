@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-class GroupNorm2D(nn.Moudle):
+class GroupNorm2D(nn.Module):
     def __init__(self, channel_num, group_num, eps=1e-5):
         super(GroupNorm2D, self).__init__()
         self.channel_num = channel_num
